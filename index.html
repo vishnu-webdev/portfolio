@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu | MERN Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header id="header">
+        <h1>PORTFOLIO</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skill">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <h2 class="about-h2">ABOUT ME</h2>
+                <p class="about-p">Hi, I'm a Full-Stack Developer in the making. Driven by curiosity, I am currently immersed in mastering both the frontend and backend of web development. I love the challenge of turning a blank canvas into a fully functional application.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="projects-h2">PROJECTS</h2>
+            <div class="gallery-container">
+                <div class="gallery-items">
+                    <img src="./images/The Multi-Tenant SaaS Platform.png" alt="Dashboard interface of a Multi-Tenant SaaS platform showing business analytics and user management tools">
+                    <a href="#">
+                        <h3>The Multi-Tenant SaaS Platform</h3>
+                        <p>A web application where multiple different businesses can sign up, manage their own staff, track inventory, and generate billing reports.</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/The High-Traffic Analytics Dashboard.png" alt="Analytics dashboard visualizing real-time metrics with line charts and server event metrics">
+                    <a href="#">
+                        <h3>The High-Traffic Analytics Dashboard</h3>
+                        <p>A dashboard that captures real-time user events (like clicks, page views, or system errors) from an external tracker and displays them in charts.</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/Real-Time Tracking & Mapping App.png" alt="Mobile UI representation showing interactive geographic maps and live tracking pin drops">
+                    <a href="#">
+                        <h3>Real-Time Tracking & Mapping App</h3>
+                        <p>A platform like UberEats or a fleet tracker where a delivery person's location is updated live on a map for the customer.</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/Media-Heavy Content Platform (e.g., AudioVideo Streaming Site).png" alt="A media streaming application wireframe containing video playback panels and playlists">
+                    <a href="#">
+                        <h3>Media-Heavy Content Platform</h3>
+                        <p>A platform where users can upload audio or video files, organize them into playlists, and stream them fluidly.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skill">
+            <h2 class="projects-h2">SKILLS</h2>
+            <div class="gallery-container">
+                <div class="gallery-items">
+                    <img src="./images/MongoDB.png" alt="A 3D architectural diagram of MongoDB showing data documents flowing from a frontend interface into a central glowing database cluster.">
+                    <a href="#">
+                        <h3>MongoDB</h3>
+                        <p>NoSQL database design, Mongoose ODM, CRUD operations, aggregation pipelines, and data modeling (embedding vs. referencing).</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/Express js.png" alt="An infographic of the Express.js framework illustrating client requests passing through custom routing and middleware chains.">
+                    <a href="#">
+                        <h3>Express.js</h3>
+                        <p>RESTful API design, custom middleware creation, MVC architecture, error handling, and route protection.</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/React js.png" alt="A conceptual diagram of the React.js framework featuring a large blue atom logo in the center, surrounded by visual streams representing state, props, and components.">
+                    <a href="#">
+                        <h3>React.js</h3>
+                        <p>Component-based architecture, Hooks (useState, useEffect, custom hooks), State Management (Redux Toolkit, Zustand, or Context API), and React Router.</p>
+                    </a>
+                </div>
+
+                <div class="gallery-items">
+                    <img src="./images/Node js.png" alt="A server rack infrastructure display showing the Node.js logo alongside metrics representing an asynchronous, event-driven network file system.">
+                    <a href="#">
+                        <h3>Node.js</h3>
+                        <p>Asynchronous programming (async/await), event-driven architecture, file systems, and npm package management.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="contact-h2">CONTACT US</h2>
+            <div class="contact-container">
+                <form action="#" method="POST" class="form-container">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    
+                    <label for="subject">Subject : </label>
+                    <input type="text" id="subject" placeholder="What is this about" required>
+                    
+                    <label for="message"> Message : </label>
+                    <textarea name="message" id="message" placeholder="Enter your message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <ul class="footer-link">
+            <li><a href="https://www.linkedin.com/in/vishnnuu" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/vishnu-webdev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+        </ul>
+        <p class="alink">&copy; 2026 VISHNU All rights reserved</p>
+        <p class="alink">contact: mail.vishnunm@gmail.com</p>
+    </footer>
+</body>
+</html>

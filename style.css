@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 90px;
+    letter-spacing: 2px;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 0;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link li a:hover {
+    transform: translateY(-3px);
+    background-color: rgb(228, 227, 225);
+    color: black;
+}
+
+#about {
+    background-image: url('./images/Background\ img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 98%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px auto 0 auto;
+    display: flex;
+}
+
+.about-container {
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(1px);
+    margin-top: 90px;
+}
+
+.about-h2, p {
+    padding: 10px 0px;
+    max-width: 500px;
+    letter-spacing: 2px;
+    line-height: 28px;  
+    margin-left: 55px;
+}
+
+.about-p{
+    text-align: center;
+    margin-left: 55px;
+}
+
+.projects-h2 {
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gallery-items {
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease;   
+}
+
+.gallery-items:hover {
+    transform: translateY(-15px);
+}
+
+.gallery-items a {
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    padding: 40px 0;
+    width: 100%;
+}
+
+.contact-h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: rgb(18, 186, 228);
+}
+
+.submit-btn {
+    font-size: 1rem;
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    padding: 14px 30px;
+    margin-top: 25px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    background-color: rgb(228, 227, 225);
+}
+
+footer {
+    background-color: rgb(228, 227, 225);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.footer-link a {
+    color: black;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link a:hover {
+    color: rgb(18, 186, 228);
+}
+
+.alink {
+    margin: 5px auto;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
